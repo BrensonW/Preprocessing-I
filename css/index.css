@@ -1,1 +1,124 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm0K0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Chelsea Market';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Chelsea Market'), local('ChelseaMarket-Regular'), url(https://fonts.gstatic.com/s/chelseamarket/v8/BCawqZsHqfr89WNP_IApC8tzKBhl.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Anton', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+html,
+body {
+  height: 100%;
+  background-color: cornflowerblue;
+}
+ul.header-nav li {
+  float: none;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  color: rebeccapurple;
+}
+ul.header-nav {
+  display: flex;
+  justify-content: center;
+  color: rebeccapurple;
+  margin-right: 3%;
+}
+div.header li a {
+  color: black;
+  text-decoration: none;
+}
+div.header li a:hover {
+  background-color: blue;
+}
+img {
+  width: 20%;
+  margin-left: 40%;
+}
+h1 {
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+:hover {
+  font-size: x-large;
+}
+h2 {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+h2:hover {
+  color: rebeccapurple;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+h3:hover {
+  color: rebeccapurple;
+}
+.twolists {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.twolists li:hover {
+  transform: scale(1, 2);
+}
+@media (max-width: 500px) {
+  display: flex;
+  flex-direction: column;
+}
+.ulspace {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: medium;
+}
+.footer:hover {
+  color: rebeccapurple;
+}
